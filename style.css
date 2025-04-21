@@ -1,0 +1,173 @@
+/* Basic styles for the whole page */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background for the whole page */
+}
+
+/* Header and Banner Section */
+header {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust this height based on your banner image */
+}
+
+.banner {
+    background-image: url('Images/fog_loch.JPG'); /* Path to your panoramic image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; /* Full height of the header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow to improve readability */
+}
+
+/* Styling for the title inside the banner */
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: transparent;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a {
+    color: white; /* Text color for links */
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem; /* Add padding around the links for better clickability */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border-radius: 5px; /* Rounded corners for the links */
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+    text-decoration: underline; /* Underline on hover for visual feedback */
+}
+
+/* Main Content Container */
+.main-content {
+    display: flex;
+    flex-direction: column; /* Stack the sections vertically */
+    padding: 2rem;
+}
+
+/* Left Section Container (About + Contact) */
+.side-sections {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Allow the sections to take up the full width */
+    margin: 2rem 0; /* Margin for spacing around sections */
+}
+
+/* Style each section inside the side container */
+.side-sections section {
+    background-color: #fff; /* White background for the sections */
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    width: 100%; /* Ensure sections inside take up full width */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Light shadow for sections */
+    border-radius: 8px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for the sections */
+.side-sections section:hover {
+    background-color: #f0f0f0; /* Lighter gray on hover for sections */
+}
+
+/* Section headers */
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 2rem;
+    background-color: #fff; /* White background for the gallery */
+    margin-top: 2rem;
+}
+
+#gallery h2 {
+    text-align: center;
+}
+
+/* Photo Grid Styles */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.photo-grid img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.photo-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Section-specific Backgrounds for Perthshire, Edinburgh, and Madagascar */
+#perthshire {
+    background-color: #e0f7fa; /* Light blue background for Perthshire */
+    padding: 2rem;
+    margin-bottom: 2rem; /* Space between Perthshire and the next section */
+    border-radius: 10px; /* Rounded corners for the section */
+}
+
+#edinburgh {
+    background-color: #fff3e0; /* Light orange background for Edinburgh */
+    padding: 2rem;
+    margin-bottom: 2rem; /* Space between Edinburgh and the next section */
+    border-radius: 10px; /* Rounded corners for the section */
+}
+
+#madagascar {
+    background-color: #e8f5e9; /* Light green background for Madagascar */
+    padding: 2rem;
+    border-radius: 10px; /* Rounded corners for the section */
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 600px) {
+    .photo-grid {
+        grid-template-columns: 1fr; /* Stack the photos in one column on small screens */
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-sections {
+        width: 100%;
+    }
+}
+
+
+
+
+
