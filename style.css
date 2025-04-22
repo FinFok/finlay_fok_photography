@@ -147,14 +147,14 @@ h2 {
     border-radius: 10px; /* Rounded corners for the section */
 }
 
-/* Mobile-friendly adjustments */
 @media (max-width: 600px) {
     .photo-grid {
-        grid-template-columns: 1fr; /* Stack the photos in one column on small screens */
+        grid-template-columns: 1fr;
     }
 
     header h1 {
         font-size: 2rem;
+        text-align: center; /* 👈 This centers the title on mobile */
     }
 
     .main-content {
@@ -166,6 +166,7 @@ h2 {
         width: 100%;
     }
 }
+
 
 
 
