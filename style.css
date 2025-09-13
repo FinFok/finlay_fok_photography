@@ -18,7 +18,7 @@ header {
 }
 
 .banner {
-    background-image: url('Images/fog_loch.JPG'); /* Path to your panoramic image */
+    background-image: url('Images/fog_loch.jpg'); /* Path to your panoramic image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
