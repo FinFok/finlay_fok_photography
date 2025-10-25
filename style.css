@@ -163,6 +163,12 @@ h2 {
   header h1 {
     font-size: 2rem;
   }
+  .banner {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem; /* keeps title from hugging the edges */
+  }
 }
 
 /* === Individual Photo Crop Adjustments === */
