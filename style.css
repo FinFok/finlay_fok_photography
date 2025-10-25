@@ -185,6 +185,31 @@ img[src*="hooded_crow_1.jpg"] {
   object-position: center right; /* shift crop upward to center the puffin */
 }
 
+/* === Individual Photo Crop Adjustments === */
+img[src*="common_myna_1.jpg"] {
+  object-position: center top; /* shift crop upward to center the puffin */
+}
+
+/* === Individual Photo Crop Adjustments === */
+img[src*="hawaiian_monk_seal_3.jpg"] {
+  object-position: center right; /* shift crop upward to center the puffin */
+}
+
+/* === Individual Photo Crop Adjustments === */
+img[src*="green_sea_turtle_1.jpg"] {
+  object-position: center right; /* shift crop upward to center the puffin */
+}
+
+/* === Individual Photo Crop Adjustments === */
+img[src*="green_sea_turtle_2.jpg"] {
+  object-position: center right; /* shift crop upward to center the puffin */
+}
+
+/* === Individual Photo Crop Adjustments === */
+img[src*="green_sea_turtle_3.jpg"] {
+  object-position: center right; /* shift crop upward to center the puffin */
+}
+
 
   
 
