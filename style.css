@@ -36,28 +36,6 @@ header h1 {
   margin: 0;
 }
 
-/* Navigation */
-nav {
-  background-color: transparent;
-  text-align: center;
-  padding: 1rem;
-}
-
-nav a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-}
-
-nav a:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  text-decoration: underline;
-}
-
 /* Main Content */
 .main-content {
   display: flex;
@@ -70,13 +48,13 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 2rem 0;
+  margin: -1.5rem 0; /* reduced from 2rem */
 }
 
 .side-sections section {
   background-color: #fff;
   padding: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem; /* reduced from 2rem */
   width: 100%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   border-radius: 8px;
@@ -94,9 +72,43 @@ h2 {
 
 /* --- GALLERY --- */
 #gallery {
-  padding: 2rem;
+  padding: 2rem 2rem 6rem 2rem; /* extra bottom space for quick links */
   background-color: #fff;
   margin-top: 2rem;
+}
+
+/* Gallery Section Navigation */
+#gallery nav {
+  display: flex;
+  flex-wrap: wrap;       /* allows multiple rows if needed on small screens */
+  justify-content: center;
+  gap: 10px;             /* space between buttons */
+  margin-bottom: 2rem;   /* space below the nav before gallery images */
+}
+
+#gallery nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #707375; /* blue button background */
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;   /* pill-shaped */
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#gallery nav a:hover {
+  background-color: #707375; /* darker blue on hover */
+  transform: translateY(-2px); /* subtle lift on hover */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* soft shadow */
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  #gallery nav a {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+  }
 }
 
 /* ✅ Uniform Grid Layout */
@@ -151,9 +163,15 @@ h2 {
 }
 
 /* Section Backgrounds */
-#perthshire { background-color: #e0f7fa; padding: 2rem; border-radius: 10px; margin-bottom: 2rem; }
-#edinburgh { background-color: #fff3e0; padding: 2rem; border-radius: 10px; margin-bottom: 2rem; }
-#madagascar { background-color: #e8f5e9; padding: 2rem; border-radius: 10px; }
+#Perthshire { background-color: #f6f1e7; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
+#Edinburgh { background-color: #d0e2f2; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
+#Madagascar { background-color: #fff4e1; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
+#Mull\ and\ Oban { background-color: #cce0d0; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
+#Cornwall { background-color: #fef3e6; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
+#Switzerland { background-color: #e0f0f8; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
+#California { background-color: #fff7cc; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
+#Hawaii { background-color: #d1f5f0; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
+#Wisconsin { background-color: #e8f3e7; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
 
 /* Responsive */
 @media (max-width: 600px) {
@@ -167,55 +185,20 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 1rem; /* keeps title from hugging the edges */
+    padding: 0 1rem;
   }
 }
 
 /* === Individual Photo Crop Adjustments === */
-img[src*="puffin_1.jpg"] {
-  object-position: center top; /* shift crop upward to center the puffin */
-}
-
-/* === Individual Photo Crop Adjustments === */
-img[src*="shag_1.jpg"] {
-  object-position: center top; /* shift crop upward to center the puffin */
-}
-
-/* === Individual Photo Crop Adjustments === */
-img[src*="shag_2.jpg"] {
-  object-position: center top; /* shift crop upward to center the puffin */
-}
-
-/* === Individual Photo Crop Adjustments === */
-img[src*="hooded_crow_1.jpg"] {
-  object-position: center right; /* shift crop upward to center the puffin */
-}
-
-/* === Individual Photo Crop Adjustments === */
-img[src*="common_myna_1.jpg"] {
-  object-position: center top; /* shift crop upward to center the puffin */
-}
-
-/* === Individual Photo Crop Adjustments === */
-img[src*="hawaiian_monk_seal_3.jpg"] {
-  object-position: center right; /* shift crop upward to center the puffin */
-}
-
-/* === Individual Photo Crop Adjustments === */
-img[src*="green_sea_turtle_1.jpg"] {
-  object-position: center right; /* shift crop upward to center the puffin */
-}
-
-/* === Individual Photo Crop Adjustments === */
-img[src*="green_sea_turtle_2.jpg"] {
-  object-position: center right; /* shift crop upward to center the puffin */
-}
-
-/* === Individual Photo Crop Adjustments === */
-img[src*="green_sea_turtle_3.jpg"] {
-  object-position: center right; /* shift crop upward to center the puffin */
-}
-
+img[src*="puffin_1.jpg"] { object-position: center top; }
+img[src*="shag_1.jpg"] { object-position: center top; }
+img[src*="shag_2.jpg"] { object-position: center top; }
+img[src*="hooded_crow_1.jpg"] { object-position: center right; }
+img[src*="common_myna_1.jpg"] { object-position: center top; }
+img[src*="hawaiian_monk_seal_3.jpg"] { object-position: center right; }
+img[src*="green_sea_turtle_1.jpg"] { object-position: center right; }
+img[src*="green_sea_turtle_2.jpg"] { object-position: center right; }
+img[src*="green_sea_turtle_3.jpg"] { object-position: center right; }
 
   
 
