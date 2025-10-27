@@ -1,11 +1,17 @@
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightboxImg');
+const lightboxCaption = document.getElementById('lightboxCaption');
 
 // When any gallery image is clicked
 document.querySelectorAll('.photo-grid img').forEach(img => {
   img.addEventListener('click', () => {
     lightbox.classList.add('active');
     lightboxImg.src = img.src;
+
+    // Find the caption from the figure
+    const fig = img.closest('figure');
+    const captionText = fig ? fig.querySelector('figcaption')?.textContent : '';
+    lightboxCaption.textContent = captionText || img.alt;
   });
 });
 
