@@ -19,7 +19,26 @@
             <h1>Finlay Fok Wildlife Photography</h1>
         </div>
     </header>
-    
+
+    <!-- Favourite Photos Section -->
+<section id="favourites">
+  <h2>Favourite Photos</h2>
+  <div class="favourites-grid">
+    <figure>
+      <img src="Images/swallow_6.jpg" alt="Puffin on cliff">
+      <figcaption>Barn Swallow, Wisconsin</figcaption>
+    </figure>
+    <figure>
+      <img src="Images/kingfisher_2.jpg" alt="Red deer in mist">
+      <figcaption>Kingfisher Preening, Edinburgh</figcaption>
+    </figure>
+    <figure>
+      <img src="Images/turkey_vulture.jpg" alt="Sea turtle underwater">
+      <figcaption> Turkey Vulture Drying its Wings, California</figcaption>
+    </figure>
+  </div>
+</section>
+x
     <!-- Main Content Container -->
     <div class="main-content">
         <!-- Side Sections: About and Contact -->
@@ -587,7 +606,7 @@
         <img src="Images/common_waxbill.jpg" alt="Common Waxbill">
         <figcaption>Common Waxbill (<i>Estrilda astrild</i>)</figcaption>
       </figure>
-      
+
       <figure>
         <img src="Images/gecko_1.jpg" alt="Gold Dust Day Gecko">
         <figcaption> Gold Dust Day Gecko (<i>Estrilda astrild</i>)</figcaption>
@@ -605,70 +624,87 @@
         <img src="Images/BCNH_1.jpg" alt="Black-crowned Night Heron">
         <figcaption>Black-crowned Night Heron (<i>Nycticorax nycticorax</i>)</figcaption>
       </figure>
+
       <figure>
         <img src="Images/BCNH_10.jpg" alt="Black-crowned Night Heron">
         <figcaption>Black-crowned Night Heron (<i>Nycticorax nycticorax</i>)</figcaption>
       </figure>
+
       <figure>
         <img src="Images/chipmunk_1.jpg" alt="Eastern Chipmunk">
         <figcaption>Eastern Chipmunk (<i>Tamias striatus</i>)</figcaption>
       </figure>
+
       <figure>
         <img src="Images/chipmunk_2.jpg" alt="Eastern Chipmunk">
         <figcaption>Eastern Chipmunk (<i>Tamias striatus</i>)</figcaption>
       </figure>
+
       <figure>
         <img src="Images/monarch_butterfly_1.jpg" alt="Monarch Butterfly">
         <figcaption>Monarch Butterfly (<i>Danaus plexippus</i>)</figcaption>
       </figure>
+
       <figure>
         <img src="Images/monarch_butterfly_2.jpg" alt="Monarch Butterfly">
         <figcaption>Monarch Butterfly (<i>Danaus plexippus</i>)</figcaption>
       </figure>
+
       <figure>
         <img src="Images/monarch_milkweed.jpg" alt="Monarch Butterfly">
         <figcaption>Monarch Butterfly (<i>Danaus plexippus</i>)</figcaption>
       </figure>
+
       <figure>
         <img src="Images/pilleated_woodpecker.jpg" alt="Pileated Woodpecker">
         <figcaption>Pileated Woodpecker (<i>Dryocopus pileatus</i>)</figcaption>
       </figure>
+
       <figure>
         <img src="Images/swallow_6.jpg" alt="Pileated Woodpecker">
         <figcaption>Barn Swallow (<i>Hirundo rustica</i>)</figcaption>
       </figure>
+
       <figure>
         <img src="Images/flying_hummingbird_1.jpg" alt="Ruby Throated Hummingbird">
         <figcaption> Ruby Throated Hummingbird (<i>Archilochus colubris</i>)</figcaption>
       </figure>
+
       <figure>
         <img src="Images/flying_hummingbird_2.jpg" alt="Ruby Throated Hummingbird">
         <figcaption> Female Ruby Throated Hummingbird (<i>Archilochus colubris</i>)</figcaption>
       </figure>
+
       <figure>
         <img src="Images/green_heron_1.jpg" alt="Green Heron">
         <figcaption>Green Heron (<i>Butorides virescens</i>)</figcaption>
       </figure>
+
       <figure>
         <img src="Images/ruby_throated_hummingbird_male.jpg" alt="Ruby Throated Hummingbird">
         <figcaption> Male Ruby Throated Hummingbird (<i>Archilochus colubris</i>)</figcaption>
       </figure>
+
       <figure>
         <img src="Images/red_bellied_woodpecker_1.jpg" alt="Red-bellied Woodpecker">
         <figcaption>Red-bellied Woodpecker (<i>Melanerpes carolinus</i>)</figcaption>
       </figure>
+
       <figure>
         <img src="Images/red_bellied_woodpecker_2.jpg" alt="Red-bellied Woodpecker">
         <figcaption>Red-bellied Woodpecker (<i>Melanerpes carolinus</i>)</figcaption>
       </figure>
+
       <figure>
         <img src="Images/bald_eagle.jpg" alt="Bald Eagle">
         <figcaption>Bald Eagle (<i>Haliaeetus leucocephalus</i>)</figcaption>
       </figure>
+      
       <figure>
         <img src="Images/white_tailed_deer_1.jpg" alt="White-tailed Deer">
         <figcaption> Juvenile White-tailed Deer (<i>Odocoileus virginianus</i>)</figcaption>
       </figure>
+
       <figure>
         <img src="Images/white_tailed_deer_2.jpg" alt="White-tailed Deer">
         <figcaption> Male White-tailed Deer (<i>Odocoileus virginianus</i>)</figcaption>
@@ -685,5 +721,14 @@
   
   <!-- Script for lightbox functionality -->
   <script src="script.js"></script>
-  </body>
-  </html>
+
+    <!-- Script for lazy loading of images (to reduce loading time)-->
+    <script>
+      document.querySelectorAll('img').forEach(img => {
+        if (!img.hasAttribute('loading')) {
+          img.setAttribute('loading', 'lazy');
+        }
+      });
+    </script>
+</body>
+</html>
