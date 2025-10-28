@@ -6,7 +6,9 @@ const lightboxCaption = document.getElementById('lightboxCaption');
 document.querySelectorAll('.photo-grid img').forEach(img => {
   img.addEventListener('click', () => {
     lightbox.classList.add('active');
-    lightboxImg.src = img.src;
+
+    // Use full-size image if available
+    lightboxImg.src = img.dataset.full || img.src;
 
     // Find the caption from the figure
     const fig = img.closest('figure');
