@@ -36,6 +36,66 @@ header h1 {
   margin: 0;
 }
 
+/* Favourite Photos Section */
+#favourites {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 1200px;
+}
+
+#favourites h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.favourites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.favourites-grid figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.favourites-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.favourites-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.favourites-grid figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 0 0 8px 8px;
+}
+
+.favourites-grid figure:hover figcaption {
+  opacity: 1;
+}
+
 /* Main Content */
 .main-content {
   display: flex;
@@ -244,3 +304,4 @@ figcaption {
 figure:hover figcaption {
   opacity: 1;
 }
+
