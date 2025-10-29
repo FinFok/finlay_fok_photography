@@ -1,307 +1,1176 @@
-/* Reset + Base */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Photography</title>
+    <link rel="stylesheet" href="style.css">
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-}
+    <!-- Open Graph tags for iMessage / WhatsApp previews -->
+    <meta property="og:title" content="Finlay Fok Wildlife Photography" />
+    <meta property="og:description" content="Wildlife photography portfolio by Finlay Fok." />
+    <meta property="og:image" content="https://finfok.github.io/finlay_fok_photography/Images/fog_loch_2.jpg" />
+    <meta property="og:url" content="https://finfok.github.io/finlay_fok_photography/" />
+    <meta property="og:type" content="website" />
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Finlay Fok Wildlife Photography</h1>
+        </div>
+    </header>
 
-/* Header + Banner */
-header {
-  position: relative;
-  width: 100%;
-  height: 300px;
-}
+<!-- Favourite Photos Section -->
+<section id="favourites">
+  <h2>Favourite Photos</h2>
+  <div class="favourites-grid">
 
-.banner {
-  background-image: url('Images/fog_loch.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_barn_swallow_6.jpg"
+        data-full="Images/swallow_6.jpg"
+        alt="Barn Swallow, Wisconsin">
+      <figcaption>Barn Swallow, Wisconsin</figcaption>
+    </figure>
 
-header h1 {
-  font-size: 3rem;
-  margin: 0;
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_kingfisher_2.jpg"
+        data-full="Images/kingfisher_2.jpg"
+        alt="Kingfisher Preening, Edinburgh">
+      <figcaption>Kingfisher Preening, Edinburgh</figcaption>
+    </figure>
 
-/* Favourite Photos Section */
-#favourites {
-  background-color: #ffffff;
-  padding: 2rem;
-  margin: 2rem auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  text-align: center;
-  max-width: 1200px;
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_turkey_vulture_1.jpg"
+        data-full="Images/turkey_vulture.jpg"
+        alt="Turkey Vulture Drying its Wings, California">
+      <figcaption>Turkey Vulture Drying its Wings, California</figcaption>
+    </figure>
 
-#favourites h2 {
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-}
+  </div>
+</section>
 
-.favourites-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-}
+    <!-- Main Content Container -->
+    <div class="main-content">
+        <!-- Side Sections: About and Contact -->
+        <div class="side-sections">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Welcome to my wildlife photography portfolio! <br><br>
+                My name is Finlay Fok and I am a graduate in Ecological and Environmental Science from The University of Edinburgh. <br><br>
+                I started my photography journey in May of 2025 and use a Fujifilm X-H2 and XF150-600mm lens to capture wildlife!</p>
+            </section>
+            
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>
+                    Email: <a href="mailto:finfokphotography@gmail.com">finfokphotography@gmail.com</a>
+                    <br><br>
+                    Instagram: 
+                    <a href="https://www.instagram.com/finlayfok?igsh=MTRkYTFrNWM3ZnQwbQ%3D%3D&utm_source=qr" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                      @finlayfok
+                    </a>
+                </p>
+            </section>
+        </div>
 
-.favourites-grid figure {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-}
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <nav>
+                <a href="#Perthshire">Perthshire</a>
+                <a href="#Edinburgh">Edinburgh</a>
+                <a href="#Mull and Oban">Mull & Oban</a>
+                <a href="#Cornwall">Cornwall</a>
+                <a href="#Madagascar">Madagascar</a>
+                <a href="#Switzerland">Switzerland</a>
+                <a href="#California">California</a>
+                <a href="#Hawaii">Hawaii</a>
+                <a href="#Wisconsin">Wisconsin</a>
+            </nav>
+            
+<!-- Perthshire Section -->
+<section id="Perthshire">
+  <h2>Perthshire</h2>
+  <div class="photo-grid">
 
-.favourites-grid img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
+    <!-- Pheasant -->
+    <figure>
+      <img 
+        src="Thumbnails/thumb_pheasant_1.jpg"
+        data-full="Images/pheasant_1.jpg"
+        alt="Common Pheasant"
+      >
+      <figcaption>Common Pheasant (<i>Phasianus colchicus</i>)</figcaption>
+    </figure>
 
-.favourites-grid img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_pheasant_2.jpg"
+        data-full="Images/pheasant_2.jpg"
+        alt="Common Pheasant"
+      >
+      <figcaption>Common Pheasant (<i>Phasianus colchicus</i>)</figcaption>
+    </figure>
 
-.favourites-grid figcaption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,0,0,0.6);
-  color: #fff;
-  font-size: 0.9rem;
-  padding: 0.5rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: 0 0 8px 8px;
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_pheasant_3.jpg"
+        data-full="Images/pheasant_3.jpg"
+        alt="Common Pheasant"
+      >
+      <figcaption>Common Pheasant (<i>Phasianus colchicus</i>)</figcaption>
+    </figure>
 
-.favourites-grid figure:hover figcaption {
-  opacity: 1;
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_pheasant_4.jpg"
+        data-full="Images/pheasant_4.jpg"
+        alt="Common Pheasant"
+      >
+      <figcaption>Common Pheasant (<i>Phasianus colchicus</i>)</figcaption>
+    </figure>
 
-/* Main Content */
-.main-content {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_pheasant_5.jpg"
+        data-full="Images/pheasant_5.jpg"
+        alt="Common Pheasant"
+      >
+      <figcaption>Common Pheasant (<i>Phasianus colchicus</i>)</figcaption>
+    </figure>
 
-/* Side Sections */
-.side-sections {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: -1.5rem 0; /* reduced from 2rem */
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_pheasant_6.jpg"
+        data-full="Images/pheasant_6.jpg"
+        alt="Common Pheasant"
+      >
+      <figcaption>Common Pheasant (<i>Phasianus colchicus</i>)</figcaption>
+    </figure>
 
-.side-sections section {
-  background-color: #fff;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem; /* reduced from 2rem */
-  width: 100%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
+    <!-- Red Squirrel -->
+    <figure>
+      <img 
+        src="Thumbnails/thumb_red_squirrel_1.jpg"
+        data-full="Images/red_squirrel_1.jpg"
+        alt="Red Squirrel"
+      >
+      <figcaption>Red Squirrel (<i>Sciurus vulgaris</i>)</figcaption>
+    </figure>
 
-.side-sections section:hover {
-  background-color: #f0f0f0;
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_red_squirrel_2.jpg"
+        data-full="Images/red_squirrel_2.jpg"
+        alt="Red Squirrel"
+      >
+      <figcaption>Red Squirrel (<i>Sciurus vulgaris</i>)</figcaption>
+    </figure>
 
-h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_red_squirrel_3.jpg"
+        data-full="Images/red_squirrel_3.jpg"
+        alt="Red Squirrel"
+      >
+      <figcaption>Red Squirrel (<i>Sciurus vulgaris</i>)</figcaption>
+    </figure>
 
-/* --- GALLERY --- */
-#gallery {
-  padding: 2rem 2rem 6rem 2rem; /* extra bottom space for quick links */
-  background-color: #fff;
-  margin-top: 2rem;
-}
+    <!-- Nuthatch -->
+    <figure>
+      <img 
+        src="Thumbnails/thumb_eurasian_nuthatch_1.jpg"
+        data-full="Images/nuthatch.jpg"
+        alt="Eurasian Nuthatch"
+      >
+      <figcaption>Eurasian Nuthatch (<i>Sitta europaea</i>)</figcaption>
+    </figure>
 
-/* Gallery Section Navigation */
-#gallery nav {
-  display: flex;
-  flex-wrap: wrap;       /* allows multiple rows if needed on small screens */
-  justify-content: center;
-  gap: 10px;             /* space between buttons */
-  margin-bottom: 2rem;   /* space below the nav before gallery images */
-}
+    <!-- Bluetit -->
+    <figure>
+      <img 
+        src="Thumbnails/thumb_bluetit_1.jpg"
+        data-full="Images/bluetit_1.jpg"
+        alt="Blue Tit"
+      >
+      <figcaption>Blue Tit (<i>Cyanistes caeruleus</i>)</figcaption>
+    </figure>
 
-#gallery nav a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #707375; /* blue button background */
-  color: white;
-  text-decoration: none;
-  border-radius: 25px;   /* pill-shaped */
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
+    <!-- Tree Creeper -->
+    <figure>
+      <img 
+        src="Thumbnails/thumb_tree_creeper_1.jpg"
+        data-full="Images/tree_creeper_1.jpg"
+        alt="Eurasian Treecreeper"
+      >
+      <figcaption>Eurasian Treecreeper (<i>Certhia familiaris</i>)</figcaption>
+    </figure>
 
-#gallery nav a:hover {
-  background-color: #707375; /* darker blue on hover */
-  transform: translateY(-2px); /* subtle lift on hover */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* soft shadow */
-}
+    <!-- Beaver -->
+    <figure>
+      <img 
+        src="Thumbnails/thumb_beaver_3.jpg"
+        data-full="Images/beaver_3.jpg"
+        alt="European Beaver"
+      >
+      <figcaption>European Beaver (<i>Castor fiber</i>)</figcaption>
+    </figure>
 
-/* Responsive for small screens */
-@media (max-width: 600px) {
-  #gallery nav a {
-      padding: 0.4rem 0.8rem;
-      font-size: 0.9rem;
-  }
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_beaver_4.jpg"
+        data-full="Images/beaver_4.jpg"
+        alt="European Beaver"
+      >
+      <figcaption>European Beaver (<i>Castor fiber</i>)</figcaption>
+    </figure>
 
-/* Uniform Grid Layout */
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
-  padding: 1rem;
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_beaver_8.jpg"
+        data-full="Images/beaver_8.jpg"
+        alt="European Beaver"
+      >
+      <figcaption>European Beaver (<i>Castor fiber</i>)</figcaption>
+    </figure>
 
-.photo-grid img {
-  width: 100%;
-  aspect-ratio: 1 / 1;   /* Makes all images square */
-  object-fit: cover;     /* Crops neatly */
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_beaver_9.jpg"
+        data-full="Images/beaver_9.jpg"
+        alt="European Beaver"
+      >
+      <figcaption>European Beaver (<i>Castor fiber</i>)</figcaption>
+    </figure>
 
-.photo-grid img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
+    <!-- Slow Worm -->
+    <figure>
+      <img 
+        src="Thumbnails/thumb_slow_worm_1.jpg"
+        data-full="Images/slow_worm.jpg"
+        alt="Slow Worm"
+      >
+      <figcaption>Slow Worm (<i>Anguis fragilis</i>)</figcaption>
+    </figure>
 
-/* --- LIGHTBOX --- */
-.lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.85);
-  display: flex;
-  flex-direction: column;     /* Stack image + caption vertically */
-  justify-content: center;
-  align-items: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  z-index: 999;
-  text-align: center;         /* centers caption text */
-  padding: 1rem;              /* prevents text from touching edges */
-}
+    <!-- Great Tit -->
+    <figure>
+      <img 
+        src="Thumbnails/thumb_great_tit_1.jpg"
+        data-full="Images/great_tit_1.jpg"
+        alt="Great Tit"
+      >
+      <figcaption>Great Tit (<i>Parus major</i>)</figcaption>
+    </figure>
 
-.lightbox.active {
-  visibility: visible;
-  opacity: 1;
-}
+  </div>
+</section>
+  
+<!-- Edinburgh Section -->
+<section id="Edinburgh">
+  <h2>Edinburgh</h2>
+  <div class="photo-grid">
 
-.lightbox img {
-  max-width: 90%;
-  max-height: 80%;            /* slightly reduced to make space for caption */
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_grey_heron_1.jpg"
+        data-full="Images/heron_1.jpg"
+        alt="Grey Heron"
+      >
+      <figcaption>Grey Heron (<i>Ardea cinerea</i>)</figcaption>
+    </figure>
 
-#lightboxCaption {
-  color: #fff;
-  font-size: 1rem;
-  font-style: italic;
-  margin-top: 1rem;
-  max-width: 90%;
-  line-height: 1.4;
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_thrush_1.jpg"
+        data-full="Images/thrush_1.jpg"
+        alt="Song Thrush"
+      >
+      <figcaption>Song Thrush (<i>Turdus philomelos</i>)</figcaption>
+    </figure>
 
-/* Section Backgrounds */
-#Perthshire { background-color: #f6f1e7; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
-#Edinburgh { background-color: #d0e2f2; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
-#Madagascar { background-color: #fff4e1; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
-#Mull\ and\ Oban { background-color: #cce0d0; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
-#Cornwall { background-color: #fef3e6; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
-#Switzerland { background-color: #e0f0f8; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
-#California { background-color: #fff7cc; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
-#Hawaii { background-color: #d1f5f0; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
-#Wisconsin { background-color: #e8f3e7; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
+    <figure>
+      <img 
+        src="Thumbnails/thumb_kingfisher_1.jpg"
+        data-full="Images/kingfisher_1.jpg"
+        alt="Common Kingfisher"
+      >
+      <figcaption>Common Kingfisher (<i>Alcedo atthis</i>)</figcaption>
+    </figure>
 
-/* Responsive */
-@media (max-width: 600px) {
-  .photo-grid {
-    grid-template-columns: 1fr;
-  }
-  header h1 {
-    font-size: 2rem;
-  }
-  .banner {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 1rem;
-  }
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_kingfisher_2.jpg"
+        data-full="Images/kingfisher_2.jpg"
+        alt="Common Kingfisher"
+      >
+      <figcaption>Common Kingfisher (<i>Alcedo atthis</i>)</figcaption>
+    </figure>
 
-/* === Individual Photo Crop Adjustments === */
-img[src*="puffin_1.jpg"] { object-position: center top; }
-img[src*="shag_1.jpg"] { object-position: center top; }
-img[src*="shag_2.jpg"] { object-position: center top; }
-img[src*="hooded_crow_1.jpg"] { object-position: center right; }
-img[src*="common_myna_1.jpg"] { object-position: center top; }
-img[src*="hawaiian_monk_seal_3.jpg"] { object-position: center right; }
-img[src*="green_sea_turtle_1.jpg"] { object-position: center right; }
-img[src*="green_sea_turtle_2.jpg"] { object-position: center right; }
-img[src*="green_sea_turtle_3.jpg"] { object-position: center right; }
+    <figure>
+      <img 
+        src="Thumbnails/thumb_kingfisher_3.jpg"
+        data-full="Images/kingfisher_3.jpg"
+        alt="Common Kingfisher"
+      >
+      <figcaption>Common Kingfisher (<i>Alcedo atthis</i>)</figcaption>
+    </figure>
 
-/* --- Hover Captions --- */
-figure {
-  position: relative;
-  overflow: hidden;
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_kingfisher_4.jpg"
+        data-full="Images/kingfisher_4.jpg"
+        alt="Common Kingfisher"
+      >
+      <figcaption>Common Kingfisher (<i>Alcedo atthis</i>)</figcaption>
+    </figure>
 
-figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_long_tailed_tit_1.jpg"
+        data-full="Images/long_tailed_tit_1.jpg"
+        alt="Long-tailed Tit"
+      >
+      <figcaption>Long-tailed Tit (<i>Aegithalos caudatus</i>)</figcaption>
+    </figure>
 
-figcaption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,0,0,0.6);
-  color: #fff;
-  text-align: center;
-  padding: 0.5rem;
-  font-size: 0.9rem;
-  font-style: italic;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: 0 0 8px 8px;
-}
+    <figure>
+      <img 
+        src="Thumbnails/thumb_long_tailed_tit_2.jpg"
+        data-full="Images/long_tailed_tit_2.jpg"
+        alt="Long-tailed Tit"
+      >
+      <figcaption>Long-tailed Tit (<i>Aegithalos caudatus</i>)</figcaption>
+    </figure>
 
-figure:hover figcaption {
-  opacity: 1;
-}
+  </div>
+</section>
 
+<!-- Mull and Oban Section -->
+<section id="Mull and Oban">
+  <h2>Mull and Oban</h2>
+  <div class="photo-grid">
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_puffin_1.jpg"
+        data-full="Images/puffin_1.jpg"
+        alt="Atlantic Puffin"
+      >
+      <figcaption>Atlantic Puffin (<i>Fratercula arctica</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_puffin_2.jpg"
+        data-full="Images/puffin_2.jpg"
+        alt="Atlantic Puffin"
+      >
+      <figcaption>Atlantic Puffin (<i>Fratercula arctica</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_puffin_3.jpg"
+        data-full="Images/puffin_3.jpg"
+        alt="Atlantic Puffin"
+      >
+      <figcaption>Atlantic Puffin (<i>Fratercula arctica</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_puffin_4.jpg"
+        data-full="Images/puffin_4.jpg"
+        alt="Atlantic Puffin"
+      >
+      <figcaption>Atlantic Puffin (<i>Fratercula arctica</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_puffin_chick_1.jpg"
+        data-full="Images/puffin_baby_1.jpg"
+        alt="Atlantic Puffin Chick"
+      >
+      <figcaption>Atlantic Puffin Chick (<i>Fratercula arctica</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_puffin_chick_2.jpg"
+        data-full="Images/puffin_baby_2.jpg"
+        alt="Atlantic Puffin Chick"
+      >
+      <figcaption>Atlantic Puffin Chick (<i>Fratercula arctica</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_shag_1.jpg"
+        data-full="Images/shag_1.jpg"
+        alt="European Shag"
+      >
+      <figcaption>European Shag (<i>Gulosus aristotelis</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_shag_2.jpg"
+        data-full="Images/shag_2.jpg"
+        alt="European Shag"
+      >
+      <figcaption>European Shag (<i>Gulosus aristotelis</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_shag_3.jpg"
+        data-full="Images/shag_3.jpg"
+        alt="European Shag"
+      >
+      <figcaption>European Shag (<i>Gulosus aristotelis</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_black_guillemot_1.jpg"
+        data-full="Images/black_guillemot.jpg"
+        alt="Black Guillemot"
+      >
+      <figcaption>Black Guillemot (<i>Cepphus grylle</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_hooded_crow_1.jpg"
+        data-full="Images/hooded_crow_1.jpg"
+        alt="Hooded Crow"
+      >
+      <figcaption>Hooded Crow (<i>Corvus cornix</i>)</figcaption>
+    </figure>
+
+  </div>
+</section>
+
+  
+<!-- Cornwall Section -->
+<section id="Cornwall">
+  <h2>Cornwall</h2>
+  <div class="photo-grid">
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_kestrel_1.jpg"
+        data-full="Images/kestrel_1.jpg"
+        alt="Common Kestrel"
+      >
+      <figcaption>Common Kestrel (<i>Falco tinnunculus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_kestrel_2.jpg"
+        data-full="Images/kestrel_2.jpg"
+        alt="Common Kestrel"
+      >
+      <figcaption>Common Kestrel (<i>Falco tinnunculus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_kestrel_3.jpg"
+        data-full="Images/kestrel_3.jpg"
+        alt="Common Kestrel"
+      >
+      <figcaption>Common Kestrel (<i>Falco tinnunculus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_kestrel_4.jpg"
+        data-full="Images/kestrel_4.jpg"
+        alt="Common Kestrel"
+      >
+      <figcaption>Common Kestrel (<i>Falco tinnunculus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_collared_dove_1.jpg"
+        data-full="Images/collared_dove_1.jpg"
+        alt="Eurasian Collared Dove"
+      >
+      <figcaption>Eurasian Collared Dove (<i>Streptopelia decaocto</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_common_shrew_1.jpg"
+        data-full="Images/common_shrew.jpg"
+        alt="Eurasian Common Shrew"
+      >
+      <figcaption>Eurasian Common Shrew (<i>Sorex araneus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_robin_1.jpg"
+        data-full="Images/robin_1.jpg"
+        alt="European Robin"
+      >
+      <figcaption>European Robin (<i>Erithacus rubecula</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_grey_seal_1.jpg"
+        data-full="Images/seal_1.jpg"
+        alt="Grey Seal"
+      >
+      <figcaption>Grey Seal (<i>Halichoerus grypus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_grey_seal_5.jpg"
+        data-full="Images/seal_5.jpg"
+        alt="Grey Seal"
+      >
+      <figcaption>Grey Seal (<i>Halichoerus grypus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_grey_seal_6.jpg"
+        data-full="Images/seal_6.jpg"
+        alt="Grey Seal"
+      >
+      <figcaption>Grey Seal (<i>Halichoerus grypus</i>)</figcaption>
+    </figure>
+
+  </div>
+</section>
+  
+<!-- Madagascar Section -->
+<section id="Madagascar">
+  <h2>Madagascar</h2>
+  <div class="photo-grid">
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_mouse_lemur_1.jpg"
+        data-full="Images/mouse_lemur.jpg"
+        alt="Claire's Mouse Lemur"
+      >
+      <figcaption>Claire's Mouse Lemur (<i>Microcebus mamiratra</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_hawk_sportive_lemur_1.jpg"
+        data-full="Images/sportitive_lemur.jpg"
+        alt="Hawks Sportive Lemur"
+      >
+      <figcaption>Hawks Sportive Lemur (<i>Lepilemur tymerlachsoni</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_blue_spotted_ribbontailed_ray_1.jpg"
+        data-full="Images/blue_spotted_ringtailed_ray.jpg"
+        alt="Bluespotted Ribbontail Ray"
+      >
+      <figcaption>Bluespotted Ribbontail Ray (<i>Taeniura lymma</i>)</figcaption>
+    </figure>
+
+  </div>
+</section>
+  
+<!-- Switzerland Section -->
+<section id="Switzerland">
+  <h2>Switzerland</h2>
+  <div class="photo-grid">
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_marmot_1.jpg"
+        data-full="Images/marmot_1.jpg"
+        alt="Alpine Marmot"
+      >
+      <figcaption>Alpine Marmot (<i>Marmota marmota</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_marmot_2.jpg"
+        data-full="Images/marmot_2.jpg"
+        alt="Alpine Marmot"
+      >
+      <figcaption>Alpine Marmot (<i>Marmota marmota</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_marmot_3.jpg"
+        data-full="Images/marmot_3.jpg"
+        alt="Alpine Marmot"
+      >
+      <figcaption>Alpine Marmot (<i>Marmota marmota</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_marmot_4.jpg"
+        data-full="Images/marmot_4.jpg"
+        alt="Alpine Marmot"
+      >
+      <figcaption>Alpine Marmot (<i>Marmota marmota</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_barn_swallow_1.jpg"
+        data-full="Images/swallow_1.jpg"
+        alt="Barn Swallow"
+      >
+      <figcaption>Barn Swallow (<i>Hirundo rustica</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_barn_swallow_2.jpg"
+        data-full="Images/swallow_2.jpg"
+        alt="Barn Swallow"
+      >
+      <figcaption>Barn Swallow (<i>Hirundo rustica</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_barn_swallow_3.jpg"
+        data-full="Images/swallow_3.jpg"
+        alt="Barn Swallow"
+      >
+      <figcaption>Barn Swallow (<i>Hirundo rustica</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_barn_swallow_4.jpg"
+        data-full="Images/swallow_4.jpg"
+        alt="Barn Swallow"
+      >
+      <figcaption>Barn Swallow (<i>Hirundo rustica</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_barn_swallow_5.jpg"
+        data-full="Images/swallow_5.jpg"
+        alt="Barn Swallow"
+      >
+      <figcaption>Barn Swallow (<i>Hirundo rustica</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_dragonfly_1.jpg"
+        data-full="Images/dragonfly_1.jpg"
+        alt="Beautiful Demoiselle"
+      >
+      <figcaption>Beautiful Demoiselle (<i>Calopteryx virgo</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_dragonfly_2.jpg"
+        data-full="Images/dragonfly_2.jpg"
+        alt="Beautiful Demoiselle"
+      >
+      <figcaption>Beautiful Demoiselle (<i>Calopteryx virgo</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_crested_grebe_1.jpg"
+        data-full="Images/greater_crested_grebe.jpg"
+        alt="Great Crested Grebe"
+      >
+      <figcaption>Great Crested Grebe (<i>Podiceps cristatus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_white_stork_1.jpg"
+        data-full="Images/stork_1.jpg"
+        alt="White Stork"
+      >
+      <figcaption>White Stork (<i>Ciconia ciconia</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_white_stork_2.jpg"
+        data-full="Images/stork_2.jpg"
+        alt="White Stork"
+      >
+      <figcaption>White Stork (<i>Ciconia ciconia</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_white_stork_3.jpg"
+        data-full="Images/stork_3.jpg"
+        alt="White Stork"
+      >
+      <figcaption>White Stork (<i>Ciconia ciconia</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_red_kite_1.jpg"
+        data-full="Images/red_kite_1.jpg"
+        alt="Red Kite"
+      >
+      <figcaption>Red Kite (<i>Milvus milvus</i>)</figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<!-- California Section -->
+<section id="California">
+  <h2>California</h2>
+  <div class="photo-grid">
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_sea_lion_1.jpg" 
+      data-full="Images/sea_lion.jpg" 
+      alt="California Sea Lion">
+      <figcaption>California Sea Lion (<i>Zalophus californianus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_annas's_hummingbird_1.jpg" 
+      data-full="Images/hummingbird_1.jpg" 
+      alt="Anna’s Hummingbird">
+      <figcaption>Anna’s Hummingbird (<i>Calypte anna</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_ground_squirrel_1.jpg" 
+      data-full="Images/ground_squirrel_1.jpg" 
+      alt="California Ground Squirrel">
+      <figcaption>California Ground Squirrel (<i>Otospermophilus beecheyi</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_ground_squirrel_2.jpg" 
+      data-full="Images/ground_squirrel_2.jpg" 
+      alt="California Ground Squirrel">
+      <figcaption>California Ground Squirrel (<i>Otospermophilus beecheyi</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_otter_1.jpg" 
+      data-full="Images/sea_otter_1.jpg" 
+      alt="California Sea Otter">
+      <figcaption>California Sea Otter (<i>Enhydra lutris</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_otter_2.jpg" 
+      data-full="Images/sea_otter_2.jpg" 
+      alt="California Sea Otter">
+      <figcaption>California Sea Otter (<i>Enhydra lutris</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_otter_3.jpg" 
+      data-full="Images/sea_otter_3.jpg" 
+      alt="California Sea Otter">
+      <figcaption>California Sea Otter (<i>Enhydra lutris</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img src="Thumbnails/thumb_otter_4.jpg" 
+      data-full="Images/sea_otter_4.jpg" alt="California Sea Otter">
+      <figcaption>California Sea Otter (<i>Enhydra lutris</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_otter_5.jpg" 
+      data-full="Images/sea_otter_5.jpg" 
+      alt="California Sea Otter">
+      <figcaption>California Sea Otter (<i>Enhydra lutris</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_turkey_vulture_1.jpg" 
+      data-full="Images/turkey_vulture.jpg" 
+      alt="Turkey Vulture">
+      <figcaption>Turkey Vulture (<i>Cathartes aura</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_cormorant_colony_1.jpg" 
+      data-full="Images/cormorant_colony_1.jpg" 
+      alt="Brandt’s Cormorant">
+      <figcaption>Brandt’s Cormorant (<i>Urile penicillatus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_cormorant_colony_2.jpg" 
+      data-full="Images/cormorant_colony_2.jpg" 
+      alt="Brandt’s Cormorant">
+      <figcaption>Brandt’s Cormorant (<i>Urile penicillatus</i>)</figcaption>
+    </figure>
+
+  </div>
+</section>
+
+  
+<!-- Hawaii Section -->
+<section id="Hawaii">
+  <h2>Hawaii</h2>
+  <div class="photo-grid">
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_brown_anole_1.jpg" 
+      data-full="Images/brown_anole.jpg" 
+      alt="Brown Anole">
+      <figcaption>Brown Anole (<i>Anolis sagrei</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_mongoose_1.jpg" 
+      data-full="Images/mongoose.jpg" 
+      alt="Small Indian Mongoose">
+      <figcaption>Small Indian Mongoose (<i>Urva auropunctata</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_red_crested_cardinal_1.jpg" 
+      data-full="Images/red_cardinal_1.jpg" 
+      alt="Red-crested Cardinal">
+      <figcaption>Red-crested Cardinal (<i>Paroaria coronata</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_red_crested_cardinal_2.jpg" 
+      data-full="Images/red_cardinal_2.jpg" 
+      alt="Red-crested Cardinal">
+      <figcaption>Red-crested Cardinal (<i>Paroaria coronata</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_pacific_golden_plover_1.jpg" 
+      data-full="Images/pacific_golden_plover_1.jpg" 
+      alt="Pacific Golden Plover">
+      <figcaption>Pacific Golden Plover (<i>Pluvialis fulva</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_common_myna_1.jpg" 
+      data-full="Images/common_myna_1.jpg" 
+      alt="Common Myna">
+      <figcaption>Common Myna (<i>Acridotheres tristis</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_cattle_egret_1.jpg" 
+      data-full="Images/cattle_egret_1.jpg" 
+      alt="Cattle Egret">
+      <figcaption>Cattle Egret (<i>Bubulcus ibis</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_cattle_egret_2.jpg" 
+      data-full="Images/cattle_egret_2.jpg" 
+      alt="Cattle Egret">
+      <figcaption>Cattle Egret (<i>Bubulcus ibis</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_hawaiian_monk_seal_1.jpg" 
+      data-full="Images/hawaiian_monk_seal_1.jpg" 
+      alt="Hawaiian Monk Seal">
+      <figcaption>Hawaiian Monk Seal (<i>Neomonachus schauinslandi</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_hawaiian_monk_seal_2.jpg" 
+      data-full="Images/hawaiian_monk_seal_2.jpg" 
+      alt="Hawaiian Monk Seal">
+      <figcaption>Hawaiian Monk Seal (<i>Neomonachus schauinslandi</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_hawaiian_monk_seal_3.jpg" 
+      data-full="Images/hawaiian_monk_seal_3.jpg" 
+      alt="Hawaiian Monk Seal">
+      <figcaption>Hawaiian Monk Seal (<i>Neomonachus schauinslandi</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_red_vented_bulbul_1.jpg" 
+      data-full="Images/red_vented_bulbul_1.jpg" 
+      alt="Red-vented Bulbul">
+      <figcaption>Red-vented Bulbul (<i>Pycnonotus cafer</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img src="Thumbnails/thumb_red_vented_bulbul_2.jpg" 
+      data-full="Images/red_vented_bulbul_2.jpg" 
+      alt="Red-vented Bulbul">
+      <figcaption>Red-vented Bulbul (<i>Pycnonotus cafer</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img src="Thumbnails/thumb_saffron_finch_1.jpg" 
+      data-full="Images/saffron_finch.jpg" 
+      alt="Saffron Finch">
+      <figcaption>Saffron Finch (<i>Sicalis flaveola</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_green_turtle_1.jpg" 
+      data-full="Images/green_sea_turtle_1.jpg" 
+      alt="Green Sea Turtle">
+      <figcaption>Green Sea Turtle (<i>Chelonia mydas</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_green_turtle_3.jpg" 
+      data-full="Images/green_sea_turtle_3.jpg" 
+      alt="Green Sea Turtle">
+      <figcaption>Green Sea Turtle (<i>Chelonia mydas</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img src="Thumbnails/thumb_red_whiskered_bulbul_1.jpg" 
+      data-full="Images/red_whiskered_bulbul_1.jpg" alt="Red-whiskered Bulbul">
+      <figcaption>Red-whiskered Bulbul (<i>Pycnonotus jocosus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_common_waxbill_1.jpg" 
+      data-full="Images/common_waxbill.jpg" 
+      alt="Common Waxbill">
+      <figcaption>Common Waxbill (<i>Estrilda astrild</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+      src="Thumbnails/thumb_gold_dust_day_gecko_1.jpg" 
+      data-full="Images/gecko_1.jpg" 
+      alt="Gold Dust Day Gecko">
+      <figcaption>Gold Dust Day Gecko (<i>Phelsuma laticauda</i>)</figcaption>
+    </figure>
+
+  </div>
+</section>
+  
+<!-- Wisconsin Section -->
+<section id="Wisconsin">
+  <h2>Wisconsin</h2>
+  <div class="photo-grid">
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_BCNH_1.jpg" 
+        data-full="Images/BCNH_1.jpg" 
+        alt="Black-crowned Night Heron">
+      <figcaption>Black-crowned Night Heron (<i>Nycticorax nycticorax</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_BCNH_10.jpg" 
+        data-full="Images/BCNH_10.jpg" 
+        alt="Black-crowned Night Heron">
+      <figcaption>Black-crowned Night Heron (<i>Nycticorax nycticorax</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_eurasian_chipmunk_1.jpg" 
+        data-full="Images/chipmunk_1.jpg" 
+        alt="Eastern Chipmunk">
+      <figcaption>Eastern Chipmunk (<i>Tamias striatus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_eurasian_chipmunk_2.jpg" 
+        data-full="Images/chipmunk_2.jpg" 
+        alt="Eastern Chipmunk">
+      <figcaption>Eastern Chipmunk (<i>Tamias striatus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_monarch_1.jpg" 
+        data-full="Images/monarch_butterfly_1.jpg" 
+        alt="Monarch Butterfly">
+      <figcaption>Monarch Butterfly (<i>Danaus plexippus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_monarch_2.jpg" 
+        data-full="Images/monarch_butterfly_2.jpg" 
+        alt="Monarch Butterfly">
+      <figcaption>Monarch Butterfly (<i>Danaus plexippus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_monarch_milkweed_1.jpg" 
+        data-full="Images/monarch_milkweed.jpg" 
+        alt="Monarch Butterfly">
+      <figcaption>Monarch Butterfly (<i>Danaus plexippus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_pilleated_woodpecker_1.jpg" 
+        data-full="Images/pilleated_woodpecker.jpg" 
+        alt="Pileated Woodpecker">
+      <figcaption>Pileated Woodpecker (<i>Dryocopus pileatus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_barn_swallow_6.jpg" 
+        data-full="Images/swallow_6.jpg" 
+        alt="Barn Swallow">
+      <figcaption>Barn Swallow (<i>Hirundo rustica</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_flying_hummingbird_1.jpg" 
+        data-full="Images/flying_hummingbird_1.jpg" 
+        alt="Ruby Throated Hummingbird">
+      <figcaption>Ruby Throated Hummingbird (<i>Archilochus colubris</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_flying_hummingbird_2.jpg" 
+        data-full="Images/flying_hummingbird_2.jpg" 
+        alt="Ruby Throated Hummingbird">
+      <figcaption>Female Ruby Throated Hummingbird (<i>Archilochus colubris</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_green_heron_1.jpg" 
+        data-full="Images/green_heron_1.jpg" 
+        alt="Green Heron">
+      <figcaption>Green Heron (<i>Butorides virescens</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_ruby_throated_hummingbird_1.jpg" 
+        data-full="Images/ruby_throated_hummingbird_male.jpg" 
+        alt="Ruby Throated Hummingbird">
+      <figcaption>Male Ruby Throated Hummingbird (<i>Archilochus colubris</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_red_bellied_woodpecker_1.jpg" 
+        data-full="Images/red_bellied_woodpecker_1.jpg" 
+        alt="Red-bellied Woodpecker">
+      <figcaption>Red-bellied Woodpecker (<i>Melanerpes carolinus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_red_bellied_woodpecker_2.jpg" 
+        data-full="Images/red_bellied_woodpecker_2.jpg" 
+        alt="Red-bellied Woodpecker">
+      <figcaption>Red-bellied Woodpecker (<i>Melanerpes carolinus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_bald_eagle_1.jpg" 
+        data-full="Images/bald_eagle.jpg" 
+        alt="Bald Eagle">
+      <figcaption>Bald Eagle (<i>Haliaeetus leucocephalus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_white_tailed_deer_1.jpg" 
+        data-full="Images/white_tailed_deer_1.jpg" 
+        alt="White-tailed Deer">
+      <figcaption>Juvenile White-tailed Deer (<i>Odocoileus virginianus</i>)</figcaption>
+    </figure>
+
+    <figure>
+      <img 
+        src="Thumbnails/thumb_white_tailed_deer_2.jpg" 
+        data-full="Images/white_tailed_deer_2.jpg" 
+        alt="White-tailed Deer">
+      <figcaption>Male White-tailed Deer (<i>Odocoileus virginianus</i>)</figcaption>
+    </figure>
+
+  </div>
+</section>
+
+ <!-- Lightbox overlay -->
+<div class="lightbox" id="lightbox">
+    <img id="lightboxImg" src="" alt="Full size image">
+    <p id="lightboxCaption"></p>
+  </div>
+  
+  <!-- Script for lightbox functionality -->
+  <script src="script.js"></script>
+
+    <!-- Script for lazy loading of images (to reduce loading time)-->
+    <script>
+      document.querySelectorAll('img').forEach(img => {
+        if (!img.hasAttribute('loading')) {
+          img.setAttribute('loading', 'lazy');
+        }
+      });
+    </script>
+</body>
+</html>
