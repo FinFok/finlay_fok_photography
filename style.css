@@ -324,3 +324,17 @@ figure:hover figcaption {
   opacity: 1;
 }
 
+/* Put this in style.css */
+.lightbox img {
+  opacity: 1;
+  transition: opacity 180ms ease;
+}
+
+.lightbox img.loading {
+  opacity: 0; /* invisible while preloading */
+}
+
+/* optional: smoother overlay fade */
+.lightbox {
+  transition: opacity 180ms ease, visibility 180ms ease;
+}
