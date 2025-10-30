@@ -36,8 +36,8 @@ header h1 {
   margin: 0;
 }
 
-/* Favourite Photos Section */
-#favourites {
+/* Portfolio Highlights Section (Showcases my favourite photos) */ 
+#Portfolio\ Highlights {
   background-color: #ffffff;
   padding: 2rem;
   margin: 2rem auto;
@@ -47,7 +47,7 @@ header h1 {
   max-width: 1200px;
 }
 
-#favourites h2 {
+#Portfolio\ Highlights h2 {
   margin-bottom: 1.5rem;
   font-size: 2rem;
 }
@@ -149,7 +149,7 @@ h2 {
 #gallery nav a {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background-color: #707375; /* blue button background */
+  background-color: #707375; /* grey button background */
   color: white;
   text-decoration: none;
   border-radius: 25px;   /* pill-shaped */
@@ -158,7 +158,7 @@ h2 {
 }
 
 #gallery nav a:hover {
-  background-color: #707375; /* darker blue on hover */
+  background-color: #707375; /* darker grey on hover */
   transform: translateY(-2px); /* subtle lift on hover */
   box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* soft shadow */
 }
@@ -194,6 +194,7 @@ h2 {
 }
 
 /* --- LIGHTBOX --- */
+/* displays images in a larger, focused overlay on top of the current page */
 .lightbox {
   position: fixed;
   top: 0;
@@ -202,8 +203,8 @@ h2 {
   height: 100%;
   background: rgba(0,0,0,0.85);
   display: flex;
-  flex-direction: column;     /* Stack image + caption vertically */
-  justify-content: center;
+  flex-direction: column;     /* Stack image + caption vertically (image on top caption below) */
+  justify-content: center; /* Centers the lightbox and caption within the viewport (the surrounding box on which the photos are viewed */  
   align-items: center;
   visibility: hidden;
   opacity: 0;
@@ -225,7 +226,7 @@ h2 {
   box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 
-#lightboxCaption {
+#lightboxCaption { 
   color: #fff;
   font-size: 1rem;
   font-style: italic;
@@ -245,7 +246,8 @@ h2 {
 #Hawaii { background-color: #d1f5f0; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
 #Wisconsin { background-color: #e8f3e7; padding: 2rem; border-radius: 10px; margin-bottom: 4rem; }
 
-/* Responsive */
+/* Responsive */ 
+/* Makes the gallery mobile friendly by adjusting the gird into a single column and adjusts text sizes and banner for accessability */
 @media (max-width: 600px) {
   .photo-grid {
     grid-template-columns: 1fr;
@@ -262,6 +264,12 @@ h2 {
 }
 
 /* === Individual Photo Crop Adjustments (Thumbnails) === */
+/* Adjusts photos so that their preview (thumbnail) shows the whole animal  */
+
+img[src*="Thumbnails/thumb_grey_heron_1.jpg"] {
+  object-position: center bottom;
+}
+
 img[src*="Thumbnails/thumb_puffin_1.jpg"] {
   object-position: center top;
 }
@@ -271,6 +279,10 @@ img[src*="Thumbnails/thumb_shag_1.jpg"] {
 }
 
 img[src*="Thumbnails/thumb_shag_2.jpg"] {
+  object-position: center top;
+}
+
+img[src*="Thumbnails/thumb_baby_shag_1.jpg"] {
   object-position: center top;
 }
 
@@ -286,12 +298,14 @@ img[src*="Thumbnails/thumb_hawaiian_monk_seal_3.jpg"] {
   object-position: center right;
 }
 
-img[src*="Thumbnails/thumb_green_sea_turtle_1.jpg"],
-img[src*="Thumbnails/thumb_green_sea_turtle_3.jpg"] {
+img[src*="Thumbnails/thumb_green_turtle_1.jpg"],
+img[src*="Thumbnails/thumb_green_turtle_3.jpg"] {
   object-position: center right;
 }
 
 /* --- Hover Captions --- */
+/* Adds a smooth fade in caption when you hover over the photo with a mouse */
+
 figure {
   position: relative;
   overflow: hidden;
@@ -334,7 +348,55 @@ figure:hover figcaption {
   opacity: 0; /* invisible while preloading */
 }
 
-/* optional: smoother overlay fade */
+/* Smoother overlay fade */
 .lightbox {
   transition: opacity 180ms ease, visibility 180ms ease;
+}
+
+/* Lightbox Photo Back Button */
+#lightboxClose {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#lightboxClose:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* Changes where the center of the button is */
+.lightbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Return to Gallery Button */
+#returnToGallery {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #222;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: none; /* Hidden by default */
+  z-index: 9999;
+}
+
+#returnToGallery:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
 }
